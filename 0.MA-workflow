@@ -1,0 +1,26 @@
+outd=/home/ygalachyants/axSA_assemblies/drap
+tempd=/store/$USER/drap
+mkdir -p $tempd/reads/altogether && rsync -q $outd/reads/altogether/n*.R[12].fq.gz $tempd/reads/altogether
+source $HOME/tools/assembly/drap/drap.rc
+p=norm
+as=trinity && asl='--dbg trinity'
+cmd="runDrap  \
+    --R1 $tempd/reads/altogether/${p}.R1.fq.gz \
+    --R2 $tempd/reads/altogether/${p}.R2.fq.gz \
+    $asl \
+    --strand RF \
+    --outdir $tempd/${as}_${p}_altogether \
+    --no-norm --no-trim \
+    --dbg-mem 96"
+eval "$cmd &> runDrap.${as}_${p}_altogether.log" &
+
+as=oases && asl='--dbg oases --kmer 25,31,37,43,49'
+cmd="runDrap  \
+    --R1 $tempd/reads/altogether/${p}.R1.fq.gz \
+    --R2 $tempd/reads/altogether/${p}.R2.fq.gz \
+    $asl \
+    --strand RF \
+    --outdir $tempd/${as}_${p}_altogether \
+    --no-norm --no-trim \
+    --dbg-mem 96"
+eval "$cmd &> runDrap.${as}_${p}_altogether.log" &
