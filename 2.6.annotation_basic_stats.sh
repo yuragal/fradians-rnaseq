@@ -2,7 +2,7 @@
 # Explore the annotated genes
 ##############################################################################################
 
-outd=/home/ygalachyants/axSA_assemblies/drap/stranded/trinity_norm_altogether
+outd=$HOME/axSA_assemblies/drap/stranded/trinity_norm_altogether
 
 cd $outd/trinotate
 

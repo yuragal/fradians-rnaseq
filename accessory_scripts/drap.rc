@@ -1,6 +1,6 @@
-export TOOLS=/home/ygalachyants/tools
-export SRC=/home/ygalachyants/tools/assembly/drap/third-party
-export BIN=/home/ygalachyants/tools/assembly/drap/bin
+export TOOLS=$HOME/tools
+export SRC=$HOME/tools/assembly/drap/third-party
+export BIN=$HOME/tools/assembly/drap/bin
 
 source $SRC/virtualenv/bin/activate
 

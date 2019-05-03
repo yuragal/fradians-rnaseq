@@ -3,7 +3,7 @@
 # and other diatom genomes
 ##############################################################################################
 
-outd=/home/ygalachyants/axSA_assemblies/drap/stranded/trinity_norm_altogether
+outd=$HOME/axSA_assemblies/drap/stranded/trinity_norm_altogether
 tempd=/store/$USER
 mkdir -p $outd/trinotate/TD2SAgenome && cd $outd/trinotate/TD2SAgenome
 

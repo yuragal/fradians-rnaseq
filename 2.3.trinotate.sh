@@ -9,7 +9,7 @@ tmhmm=$HOME/tools/annotation/tmhmm-2.0c/bin/tmhmm
 
 trinotate_dir=$HOME/tools/annotation/Trinotate-v3.1.1
 
-outd=/home/ygalachyants/axSA_assemblies/drap/stranded/trinity_norm_altogether
+outd=$HOME/axSA_assemblies/drap/stranded/trinity_norm_altogether
 tempd=/store/$USER
 
 qfna=$outd/trinotate/transcripts.fa

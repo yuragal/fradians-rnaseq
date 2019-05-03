@@ -2,8 +2,8 @@
 # Add annotations from TRAPID and Mercator
 ##############################################################################################
 
-trinotate_dir=/home/ygalachyants/tools/annotation/Trinotate-v3.1.1
-outd=/home/ygalachyants/axSA_assemblies/drap/stranded/trinity_norm_altogether
+trinotate_dir=$HOME/tools/annotation/Trinotate-v3.1.1
+outd=$HOME/axSA_assemblies/drap/stranded/trinity_norm_altogether
 tempd=/store/$USER
 
 mkdir -p $outd/trinotate/more_annotations && cd $outd/trinotate/more_annotations

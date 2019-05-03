@@ -6,7 +6,7 @@
 db=$HOME/repo/NCBI/2016_Nov/nr.tar.bz2
 export LD_LIBRARY_PATH=/share/apps/gcc/7.3/lib64:$LD_LIBRARY_PATH
 
-outd=/home/ygalachyants/axSA_assemblies/drap/stranded/trinity_norm_altogether
+outd=$HOME/axSA_assemblies/drap/stranded/trinity_norm_altogether
 tempd=/store/$USER
 qfna=$outd/trinotate/transcripts.fa
 qfaa=$outd/trinotate/pfam_blastp_hits.transcripts.fa.transdecoder.pep

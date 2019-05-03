@@ -11,10 +11,10 @@ signalp=$HOME/tools/annotation/signalp-4.1/signalp
 rnammer=$HOME/tools/annotation/rnammer/rnammer
 tmhmm=$HOME/tools/annotation/tmhmm-2.0c/bin/tmhmm
 
-outd=/home/ygalachyants/axSA_assemblies/drap/stranded/trinity_norm_altogether
+outd=$HOME/axSA_assemblies/drap/stranded/trinity_norm_altogether
 tempd=/store/$USER
 
-TD=/home/ygalachyants/tools/annotation/TransDecoder-v5.0.2
+TD=$HOME/tools/annotation/TransDecoder-v5.0.2
 trinotate_dir=$HOME/tools/annotation/Trinotate-v3.1.1
 
 mkdir $outd/trinotate && cd $outd/trinotate

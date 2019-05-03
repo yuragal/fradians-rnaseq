@@ -5,14 +5,14 @@
 #outd -- is path to data storage directory
 #tempd -- path to local directory
 
-outd=/home/ygalachyants/axSA_assemblies/drap
+outd=$HOME/axSA_assemblies/drap
 cd reads && mkdir -p raw cleaned normalized && cd -
 cd reads/raw && ls -l ../../../trinity/reads/ | cut -d' ' -f 11 | xargs -I% -n1 ln -s % ./
 tempd=/store/$USER/drap && cd $tempd && mkdir -p reads/raw reads/cleaned reads/normalized
 ######################################################################
 #Clean reads
 ######################################################################
-export PATH=/home/ygalachyants/tools/assembly/qc/bbmap:$HOME/local/compile/pigz-2.4:$PATH
+export PATH=$HOME/tools/assembly/qc/bbmap:$HOME/local/compile/pigz-2.4:$PATH
 cd rsync -qL $outd/reads/raw/*bz2 $tempd/reads/raw
 
 #The input file names are:

@@ -5,7 +5,7 @@ dir="~/matrosov/axSA_assemblies/drap/stranded/trinity_norm_altogether/abundance_
 #Figure 2a
 #############################################
 #Nx plots for all assemblies
-#cd /home/ygalachyants/axSA_assemblies/drap/stranded/trinity_norm_altogether/trinotate
+#cd $HOME/axSA_assemblies/drap/stranded/trinity_norm_altogether/trinotate
 #cat transcripts.fa | awk 'NR%2==1{printf("%s\t",$1);next}NR%2==0{printf("%d\n",length($1))}' | cut -f2 | sort -k1nr > transcripts.len
 #ln -s transcripts.len trinity_norm_altogether.len
 #cat ../../metaRF_trinity/transcripts_fpkm_1.fa | awk 'NR%2==1{printf("%s\t",$1);next}NR%2==0{printf("%d\n",length($1))}' | cut -f2 | sort -k1nr > metaRF_trinity.len
